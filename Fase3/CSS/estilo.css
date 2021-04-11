@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: black;
+    font-size:larger;
+    text-align: center;
+    padding: 2em;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu a {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+}
+
+.menu a:hover {
+    background-color: #434343;
+}
+
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+    display: block;
+}
+
+.menu li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
