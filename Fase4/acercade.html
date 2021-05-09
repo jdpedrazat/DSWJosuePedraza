@@ -1,77 +1,98 @@
 <html>
-  <head>
-    <meta charset="utf-8" name="Josué Pedraza" content="Flex Box, CSS Grid">
-    <title>Flex Box, CSS Grid</title>
-    <link href="CSS/estilo.css" rel="stylesheet" type="text/css">
-  </head>
 
-  <body>
-    <header>
-      <section>
-        <h1>Fase 3 Diseño y Construcción II</h1>
-        <h1>Universidad del Estado</h1>
-        <article>
-          Mediante la aplicación de lo aprendido, crear una página web para la Universidad del Estado, haciendo
-          uso del lenguaje HTML y CSS, aplicando etiquetas básicas y semánticas, Flex Box o CSS Grid.
-        </article>
-      </section>
-      <aside>
-        <img src="imagenes/logo_u.png" alt="logo_u">
-      </aside>      
-            
-    </header>
-    <nav class="menu">
-      <ul>
-        <li><a href="building.html">Inicio</a></li>
-        <li><a href="#">Temas</a>
-          <ul>
-            <!--<li><a href="#">Tema 1: Etiquetas Básicas de HTML, atributos y valoresa </a> </li>
-            <li><a href="#">Tema 2: La interfaz de usuario, Interacción Humano Ordenador</a></li>
-            <li><a href="#">Tema 3: Etiquetas semánticas, Listas y enlaces</a></li>-->
-            <li><a href="tema4.html">Tema 4: Flex Box, CSS Grid</a></li>
-            <!--<li><a href="#">Tema 5: Frameworks CSS, Posicionamiento Web</a></li>-->
-          </ul>
-        </li>
-        <li><a href="#">Recursos Digitales</a>
-          <ul>
-            <li><a href="#">Recurso 1</a></li>
-            <li><a href="#">Recurso 2</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Aprendizaje</a>
-          <ul>
-            <li><a href="#">Recurso 1</a></li>
-            <li><a href="#">Recurso 2</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Acerca de</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="utf-8" name="Josué Pedraza" content="Flex Box, CSS Grid">
+  <title>Flex Box, CSS Grid</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="CSS/estilo.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
-    <div class="contenedor">
-      <section>
-        <h1>Autor: Nombre: Josué Pedraza</h1>
-        <img style="width:50%" src="imagenes/Yo.jpg" alt="Autor" >
-        <h2>Grupo: 301122_17</h2>
-        <h2>UNIVERSIDAD NACIONAL ABIERTA Y A DISTANCIA - UNAD</h2>
-        <h2>  ESCUELA DE CIENCIAS BÁSICAS TECNOLOGÍA E INGENIERÍA</h2>
-        <h2>  ABRIL 2021</h2>
-        <h2>CIUDAD</h2>
-          
-        
-      </section>
-      <aside>
-        <h2>
-          <div class="timeline_unad">
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>              
-        </div></h2>
-      </aside>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <section class="col-xs-12 col-md-9">
+          <h1>Universidad del Estado</h1>
+          <h2>Fase 3 Diseño y Construcción III</h2>
+        </section>
+        <aside class="col-xs-12 col-md-3">
+          <img src="imagenes/logo_u.png" alt="logo_u" width="100%">
+        </aside>
+      </div>
     </div>
-    <footer>
-      Correo electrónico: 
-      <e-mail>jdpedrazat@unadvirtual.edu.co</e-mail> - 
-      Skype: davidtriana@hotmail.com <br>
-      Fecha Actualización: 11/04/2021
-    </footer>
-  </body>
+  </header>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="building.html">Inicio</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+        aria-expanded="false">Temas</a>
+      <ul class="dropdown-menu">
+        <li><a class="nav-link disabled" href="#" aria-disabled="true">Tema 1: Etiquetas Básicas de HTML,
+            atributos y valores</a></li>
+        <li><a class="nav-link disabled" href="#">Tema 2: La interfaz de usuario, Interacción Humano
+            Ordenador</a></li>
+        <li><a class="nav-link disabled" href="#">Tema 3: Etiquetas semánticas, Listas y enlaces</a></li>
+        <li><strong><a class="dropdown-item" href="tema4.html">Tema 4: Flex Box, CSS Grid</a></strong></li>
+        <li><a class="nav-link disabled" href="#">Tema 5: Frameworks CSS, Posicionamiento Web</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+        aria-expanded="false">Recursos Digitales</a>
+      <ul class="dropdown-menu">
+        <li><strong><a class="nav-link disabled" href="#">Recurso 1</a></strong></li>
+        <li><strong><a class="nav-link disabled" href="#">Recurso 2</a></strong></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+        aria-expanded="false">Aprendizaje</a>
+      <ul class="dropdown-menu">
+        <li><strong><a class="dropdown-item" href="cuestionario1.html">Cuestionario 1</a></strong></li>
+        <li><strong><a class="dropdown-item" href="cuestionario2.html">Cuestionario 2</a></strong></li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
+    </li>
+  </ul>
+
+  <div class="container-fluid">
+    <div class="row">
+      <section class="col-xs-12 col-md-7">
+        <p>
+          <img style="width:100%" src="imagenes/Yo.jpg" alt="Autor"">
+          <h2>Autor: Nombre: Josué Pedraza</h2>
+        </p>
+        </section>
+
+        <aside class=" col-xs-12 col-md-5">
+        <h2>Grupo: 301122_17
+          <p> UNIVERSIDAD NACIONAL ABIERTA Y A DISTANCIA - UNAD</p>
+          <p> ESCUELA DE CIENCIAS BÁSICAS TECNOLOGÍA E INGENIERÍA</p>
+          <p> ABRIL 2021</p>
+          <p> Bogotá D.C.</p>
+        </h2>
+        </aside>
+    </div>
+  </div>
+  <footer>
+    Correo electrónico:
+    <e-mail>jdpedrazat@unadvirtual.edu.co</e-mail> -
+    Skype: davidtriana@hotmail.com <br>
+    Fecha Actualización: 08/05/2021
+  </footer>
+</body>
+
 </html>

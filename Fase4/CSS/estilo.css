@@ -39,9 +39,9 @@ h3 {
         align-items: flex-start;
     }
 
-    .col-8 {
+    /*.col-8 {
         max-width: 100%;
-    }
+    }*/
 }
 
 footer{
@@ -54,6 +54,7 @@ article {
     color: black;
     font-size:medium;
     text-align: justify;
+    padding: 1em;
 }
 
 .notas {
@@ -64,4 +65,9 @@ article {
     background-color: cadetblue;
     width: auto;
     padding: 1em;
+}
+
+.contenedor {
+    display: flex;
+    text-align: center;
 }
